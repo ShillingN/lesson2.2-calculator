@@ -22,11 +22,11 @@ public class CalculatorController {
         return calculatorService.getCalculatorHello();
     }
 
-//    @GetMapping("/test")
-//    public String test(@RequestParam int num1, @RequestParam int num2) {
-//        int result = num1 + num2;
-//        return "Сумма: " + result;
-//    }
+    @GetMapping("/test")
+    public String test(@RequestParam int num1, @RequestParam int num2) {
+        int result = num1 + num2;
+        return "Сумма: " + result;
+    }
 
     @GetMapping("/plus")
     public String addition(@RequestParam int num1, @RequestParam int num2) {
