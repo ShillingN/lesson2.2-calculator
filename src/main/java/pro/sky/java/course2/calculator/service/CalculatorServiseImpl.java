@@ -4,32 +4,24 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorServiseImpl implements CalculatorService {
+
     @Override
-    public String getCalculatorHello() {
-        return "<b>Hello, user!</b>";
+    public int Plus(int num1, int num2) {
+        return num1 + num2;
     }
 
     @Override
-    public int getCalculatorPlus(int num1, int num2) {
-        int result = num1 + num2;
-        return result;
+    public int Minus(int num1, int num2) {
+        return num1 - num2;
     }
 
     @Override
-    public int getCalculatorMinus(int num1, int num2) {
-        int result = num1 - num2;
-        return result;
+    public int Multiply(int num1, int num2) {
+        return num1 * num2;
     }
 
     @Override
-    public int getCalculatorMultiply(int num1, int num2) {
-        int result = num1 * num2;
-        return result;
-    }
-
-    @Override
-    public int getCalculatorDivide(int num1, int num2) {
-        int result = num1 / num2;
-        return result;
+    public int Divide(int num1, int num2) {
+        return num1 / num2;
     }
 }
